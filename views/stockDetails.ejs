@@ -1,0 +1,28 @@
+<%- include('header') -%>
+<%- include('dashboard') -%>
+    <div class="top stock-container">
+        <h4>Stock Details</h4>
+        <form method="#" action="#">
+            <div class="stock-detail-container">
+                <table class="table">
+                    <thead class="thead">
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Item Detail</th>
+                            <th>Item Price</th>
+                            <th>Quantity</th>
+                            <th>Company Name</th>
+                            <th>Location</th>
+                            <th>Expire Date</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <%- include('showStockDetails') -%>
+                    </tbody>
+                </table>                
+                </div>
+            </div>
+        </form>
+    </div>
+<%- include('footer') -%>

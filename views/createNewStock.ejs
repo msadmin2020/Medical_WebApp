@@ -1,0 +1,49 @@
+<%- include('header') -%>
+<%- include('dashboard') -%>
+    <div class="top new-stock-container">
+        <h4>Add New Stock</h4>
+        <form method="POST" action="/route/api/medical/stocks">
+            <div class="add-stock-container">
+                <div class="form-inline">
+                    <b for="item_name">Item Name:</b>
+                    <input type="text" id="item_name" name="item_name" class="form-control" spellcheck="false" autocomplete="off">
+                </div>
+                <div class="form-inline">
+                    <b for="item_detail">Item Detail:</b>
+                    <input type="text" id="item_detail" name="item_detail" class="form-control" spellcheck="false" autocomplete="off">
+                </div>
+                <div class="form-inline">
+                    <b for="item_price">Item Price:</b>
+                    <input type="text" id="item_price" name="item_price" class="form-control" spellcheck="false" autocomplete="off">
+                </div>
+                <div class="form-inline">
+                    <b for="quantity">Quantity:</b>
+                    <input type="text" id="quantity" name="quantity" class="form-control" spellcheck="false" autocomplete="off">
+                </div>
+                <div class="form-inline">
+                    <b for="company_name">Company Name:</b>
+                    <input type="text" id="company_name" name="company_name" class="form-control" list="companyList" spellcheck="false" autocomplete="off">
+                    <datalist id="companyList">
+                        <!-- <% for(var i=0; i<getCompany.length; i++) { %>
+                            <option value=<%= getCompany[i].company_name %>>
+                        <% } %> -->
+                        <% for(var i=0; i<getCompany.length; i++) { %>
+                            <option value="<%= getCompany[i].company_name %>"><%= getCompany[i].company_name %></option>
+                        <% } %>
+                    </datalist>
+                </div>
+                <div class="form-inline">
+                    <b for="location">Location:</b>
+                    <input type="text" id="location" name="location" class="form-control" spellcheck="false" autocomplete="off">
+                </div>
+                <div class="form-inline">
+                    <b for="expire_date">Expire Date:</b>
+                    <input type="date" id="date" name="expire_date" value="<%= new Date().toISOString().split('T')[0] %>" class="form-control" spellcheck="false" autocomplete="off">
+                </div>
+                <div class="form-inline">
+                    <button type="submit" class="btn btn-success rounded-pill">Add Stock</button>
+                </div>
+            </div>
+        </form>
+    </div>
+<%- include('footer') -%>

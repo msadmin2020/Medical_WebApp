@@ -1,0 +1,26 @@
+<%- include('header') -%>
+<%- include('dashboard') -%>
+    <div class="top client-container">
+        <h4>Client Details</h4>
+        <form method="#" action="#">
+            <div class="client-detail-container">
+                <table class="table">
+                    <thead class="thead">
+                        <tr>
+                            <th>Client Name</th>
+                            <th>Surname</th>
+                            <th>Mobile Number</th>
+                            <th>Address</th>
+                            <th>City</th>                            
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <%- include('showClientDetails') -%>
+                    </tbody>
+                </table>                
+                </div>
+            </div>
+        </form>
+    </div>
+<%- include('footer') -%>

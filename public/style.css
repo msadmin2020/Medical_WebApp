@@ -1,0 +1,385 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color:lightskyblue;
+    background-image: url('/assets/Medical_System.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* login page styles */
+.login_main {
+    margin: auto;
+    width: 50%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.login-container {
+    margin: auto;
+    width: 50%;
+    /* border: 1px solid black; */
+    padding: 5px;
+    text-align: center;
+}
+
+.title>h2{
+    font-size: 70px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: 1px white;
+    /* -webkit-text-stroke-width: medium; */
+    -webkit-text-stroke-width: 1.5pt;
+} 
+
+.title>h6{
+    font-size: 18px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form{
+    padding: 0 3em;
+}
+
+.btn{
+    padding: .4em 2em;
+    border-radius: 15px;
+}
+
+/* logout alert message styles */
+.alert{
+    margin-top: 5%;
+}
+
+
+/* navigation menu list styles */
+.menu-bar{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:teal;
+    width:100%;
+    position: relative;
+}
+
+.nav_menu_link{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.nav_menu_link>li{
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 6px;
+    position: static;    
+}
+
+.nav_menu_link>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_menu_link>li:hover{
+    background-color:darkseagreen;
+    border-radius: 3px;
+}
+
+.active, .nav_menu_link>li:hover{
+    background: darkseagreen;
+    border-radius: 3px;
+}
+
+/* logout list styles */
+.nav_logout_link{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    margin-left: 130px;
+}
+.nav_logout_link>li{
+    width: 100px;
+    margin-left: 100px;
+    position:static;
+}
+.nav_logout_link>li>a{
+    text-decoration: none;
+    color: white;
+}
+.nav_logout_link>li:hover{
+    background-color:darkseagreen;
+    border-radius: 3px;
+}
+.active, .nav_logout_link>li:hover{
+    background: darkseagreen;
+    border-radius: 3px;
+}
+
+/*navigation menu items images margin*/
+.menu-bar, .fas{
+    margin-right: 8px;
+}
+
+/*navigation sub menu items should not be displayed*/
+.sub-menu-bar{
+    display: none;
+} 
+
+/*navigation sub menu items styles*/
+.nav_menu_link>li:hover .sub-menu-bar{
+    display:block;
+    position: absolute;
+    background-color: teal;
+}
+
+.nav_menu_link>li:hover .sub-menu-bar>.nav_menu_link{
+    display: block;
+    margin: 8px;
+} 
+
+.nav_menu_link>li:hover .sub-menu-bar>.nav_menu_link>li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+} 
+
+/*application title css styles*/
+.container>h3{
+    padding-top: 1%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    -webkit-text-stroke: 1px white;
+     /* -webkit-text-stroke-width: medium; */ 
+    -webkit-text-stroke-width: 2pt;
+}
+
+
+/* new stock container css styles */
+.new-stock-container {
+    margin: auto;
+    width: 50%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.new-stock-container>h4{
+    text-align: center;
+    padding-top: 2%;
+    font-weight:bold;
+}
+
+/* add stock container css styles */
+.add-stock-container {
+    margin: auto;
+    width: 80%;
+    /* border: 1px solid black; */
+    padding: 5px;
+    text-align: left;
+}
+
+/* form add stock container css styles */
+.add-stock-container>.form-inline{
+    align-items: center;
+    /* margin:2px; */
+    padding: 3%;
+    /* border: 1px solid black; */
+}
+
+.add-stock-container>.form-inline>.form-control{
+    width: 200px;
+    margin-left: 40px;
+    font-family:'Times New Roman', Times, serif;
+} 
+
+.add-stock-container>.form-inline>b{
+    display: inline-block;
+    width: 150px;
+}
+
+/* form btn css styles */
+.add-stock-container>.form-inline>.btn{
+    margin-left: 130px;
+    align-items: center;
+}
+
+/* sales stock container css styles */
+.sales-stock-container {
+    margin: auto;
+    width: 80%;
+    /* border: 1px solid black; */
+    padding: 1px;
+    text-align: left;
+    margin-left: 19%;
+}
+
+/* form sales stock container css styles */
+.sales-stock-container>.form-inline{
+    align-items: center;
+    /* margin:2px; */
+    padding: 1%;
+    /* border: 1px solid black; */
+}
+
+.sales-stock-container>.form-inline>.form-control{
+    width: 200px;
+    margin-left: 40px;
+    font-family:'Times New Roman', Times, serif;
+} 
+
+.sales-stock-container>.form-inline>b{
+    display: inline-block;
+    width: 200px;
+}
+
+/* form btn css styles */
+.sales-stock-container>.form-inline>.btn{
+    margin-left: 270px;
+    align-items: center;
+}
+
+/**************** Table css styles ******************/
+
+/* Company details table */
+.company-container {
+    margin: auto;
+    width: 80%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+.company-container>h4 {
+    /* border: 1px solid black; */
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+/* Stock details table */
+.stock-container {
+    margin: auto;
+    width: 90%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+.stock-container>h4 {
+    /* border: 1px solid black; */
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+/* Client details table */
+.client-container {
+    margin: auto;
+    width: 90%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+.client-container>h4 {
+    /* border: 1px solid black; */
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+/* Sales details table */
+.sales-container {
+    margin: auto;
+    width: 90%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+.sales-container>h4 {
+    /* border: 1px solid black; */
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.thead{
+    background-color:darkkhaki;
+}
+
+.table td, .table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.tbody>tr:hover{
+    background-color: lightsalmon;
+}
+
+.tbody>tr>td>.btn{
+    font-size: small;
+}
+
+@media only screen and (max-width:1024px){
+    table,thead,tbody,th,td,tr{
+        display: block;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr{
+        border: 1px solid;
+    }
+
+    td{
+        border: none;
+        /* border-bottom: 1px solid; */
+        position: relative;
+    }
+}
+
+/**************** Sell Table css styles ******************/
+
+#labelSellInvoice{
+    text-align: center;
+    padding-top: 4%;
+    margin-left: 1%;
+    font-weight:bold;
+}
+
+#sellDetailsTable {
+    margin: auto;
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 1px;
+    text-align: left;
+    margin-left: 25%;
+    margin-top: 1.5%;
+}
+
+
+    
+
+

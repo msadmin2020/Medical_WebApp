@@ -1,0 +1,13 @@
+<% for(var i=0; i<clientDetails.length; i++) { %>
+    <tr>
+        <td><%= clientDetails[i].client_name %></td>
+        <td><%= clientDetails[i].surname %></td>
+        <td><%= clientDetails[i].mobile_number %></td>
+        <td><%= clientDetails[i].address %></td>
+        <td><%= clientDetails[i].city %></td>
+        <td>
+            <a href="<%= `/route/api/medical/clients/${clientDetails[i]._id}/edit` %>" type="button" class="btn btn-success">Edit</a>
+            <a href="<%= `/route/api/medical/clients/${clientDetails[i]._id}?_method=DELETE` %>" type="button" class="btn btn-success"  onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>
+        </td>
+    </tr>
+<% } %>

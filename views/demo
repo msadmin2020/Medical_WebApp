@@ -1,0 +1,42 @@
+<div class="new-stock-container">
+    <h4>Add New Stock</h4>
+    <form method="POST" action="#">
+        <div class="add-stock-container">
+            <div class="form-inline">
+                <b for="item_name">Item Name:</b>
+                <input type="text" id="item_name" class="form-control">
+            </div>
+            <div class="form-inline">
+                <b for="item_detail">Item Detail:</b>
+                <input type="text" id="item_detail" class="form-control">
+            </div>
+            <div class="form-inline">
+                <b for="item_price">Item Price:</b>
+                <input type="text" id="item_price" class="form-control">
+            </div>
+            <div class="form-inline">
+                <b for="quantity">Quantity:</b>
+                <input type="text" id="quantity" class="form-control">
+            </div>
+            <div class="form-inline">
+                <b for="company_name">Company Name:</b>
+                <input type="text" id="company_name" class="form-control" list="exampleList">
+                <datalist id="exampleList">
+                    <option value="A">  
+                    <option value="B">
+                  </datalist>
+            </div>
+            <div class="form-inline">
+                <b for="location">Location:</b>
+                <input type="text" id="location" class="form-control">
+            </div>
+            <div class="form-inline">
+                <b for="expire_date">Expire Date:</b>
+                <input type="datetime-local" id="expire_date" class="form-control">
+            </div>
+            <div class="form-inline">
+                <button type="submit" class="btn btn-success rounded-pill">Add Stock</button>
+            </div>
+        </div>
+    </form>
+</div>

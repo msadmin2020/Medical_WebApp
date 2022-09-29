@@ -1,0 +1,25 @@
+<%- include('header') -%>
+<%- include('dashboard') -%>
+    <div class="top company-container">
+        <h4>Company Details</h4>
+        <form method="#" action="#">
+            <div class="company-detail-container">
+                <table class="table">
+                    <thead class="thead">
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Address</th>
+                            <th>Contact Person Name</th>
+                            <th>Mobile Number</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <%- include('showCompanyDetails') -%>
+                    </tbody>
+                </table>                
+                </div>
+            </div>
+        </form>
+    </div>
+<%- include('footer') -%>
